@@ -4,10 +4,10 @@ const bild = document.querySelector("img");
 let array = [];
 const nyckel = "varor"
 
-function AddToList(varu_namn, pris, bild_sökväg){
+function AddToList(vara_info, pris, bild_sökväg){
     let vara = {
         bild:bild_sökväg ,
-        namn:varu_namn ,
+        namn:vara_info ,
         pris:pris
     }
 
@@ -15,10 +15,10 @@ function AddToList(varu_namn, pris, bild_sökväg){
 
     let json = JSON.stringify(array);
     window.localStorage.setItem(nyckel, json);
-    DrawStuff();
+    DrawListItems();
 }
 
-function DrawStuff(){
+function DrawListItems(){
     kundvagn.innerHTML="";
     for (let i = 0; i < array.length; i++){
         let article = document.createElement("article");
@@ -27,11 +27,11 @@ function DrawStuff(){
         bild.setAttribute("src", array[i].bild);
         let h2 = document.createElement("h2");
         h2.textContent = array[i].namn;
-        let p = document.createElement("p");
-        p.textContent = array[i].pris;
+        let h3 = document.createElement("h3");
+        h3.textContent = array[i].pris + " kr";
         article.appendChild(bild);
         article.appendChild(h2);
-        article.appendChild(p);
+        article.appendChild(h3);
         kundvagn.appendChild(article);
     }
 }
