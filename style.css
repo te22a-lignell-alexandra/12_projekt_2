@@ -106,6 +106,10 @@ main{
     gap: 5vw;
 }
 
+/* .kundvagn_dropdown{
+    
+} */
+
 @media screen and (min-width: 641px) and (max-width: 1007px){
     body{
         grid-template-columns: 50vw 50vw;
@@ -116,6 +120,7 @@ main{
         width: 95vw;
         text-align: center;
         font-size: 1.7em;
+        margin-bottom: 0px;
     }
 
     nav{
@@ -127,6 +132,7 @@ main{
         justify-content: center;
         margin-right: 4vw;
         margin-left: 0px;
+        margin-top: 0px;
     }
 
     nav > a{
@@ -167,4 +173,81 @@ main{
         width: 28vw;
     }
     
+}
+
+@media screen and (max-width: 640px){
+    body{
+        display: grid;
+        grid-template-columns: 95vw;
+        grid-template-rows: 17vh 5vh 13vh 70vh;
+    }
+
+    header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        max-width: 98vw;
+        height: 17vh;
+        font-size: .9em;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    header > img{
+        max-height: 15vh;
+        align-self: center;
+        margin-left: 1vw;
+    }
+
+    nav{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: 2px solid white;
+        background-color: #D6BEEE;
+        height: 5vh;
+        width: 95vw;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: 1vh solid #D6BEEE;
+    }
+
+    nav > a{
+        height: 4vh;
+        width: auto;
+        font-size: .9em;
+    }
+
+    main{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        width: 70vw;
+        justify-self: center;
+    }
+
+    main > article > img{
+        width: 70vw;
+    }
+
+    aside{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-top: 3vh;
+        margin-left: 30vw;
+        margin-right: 30vw;
+        font-size: .6em;
+    }
+
+    .kundvagn > article{
+        width: 35vw;
+        font-size: 1em;
+    }
+
+    .kundvagn > article > img{
+        width: 33vw;
+    }
+
 }
