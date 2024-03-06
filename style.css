@@ -26,6 +26,11 @@ header{
     gap: 4vw;
 }
 
+header > img {
+    width: 23vw;
+    height: auto;
+}
+
 nav{
     grid-column: 1/2;
     grid-row: 3/6;
@@ -81,10 +86,6 @@ aside{
     border-radius: 5px;
 }
 
-img{
-    height: 100%;
-    width: auto;
-}
 
 main > article > img{
     width: 25vw;
