@@ -27,7 +27,7 @@ header{
 }
 
 header > img {
-    width: 23vw;
+    width: auto;
     height: auto;
 }
 
@@ -89,7 +89,7 @@ aside{
 
 main > article > img{
     width: 25vw;
-    max-height: 35vh;
+    height: auto;
 }
 
 main > article{
@@ -106,10 +106,6 @@ main{
     grid-template-columns: 25vw 25vw;
     gap: 5vw;
 }
-
-/* .kundvagn_dropdown{
-    
-} */
 
 @media screen and (min-width: 641px) and (max-width: 1007px){
     body{
