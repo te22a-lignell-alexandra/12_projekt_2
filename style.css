@@ -6,7 +6,7 @@ body{
 
     display: grid;
     grid-template-columns: 19vw 30vw 30vw 19vw;
-    grid-template-rows: 20vh 7vh 40vh 40vh 40vh;
+    grid-template-rows: 30vh 7vh 40vh 40vh 40vh;
 
     font-family: "Kaushan Script", Verdana;
 }
@@ -17,10 +17,11 @@ header{
     background-color: #D6BEEE;
     color: black;
     font-size: 2em;
+    text-align: center;
     
     display: flex;
     flex-direction: row;
-    height: 25vh;
+    height: 30vh;
     margin-top: 0px;
     margin-bottom: 5vh;
     gap: 4vw;
@@ -29,6 +30,7 @@ header{
 header > img {
     width: auto;
     height: auto;
+    
 }
 
 nav{
@@ -52,6 +54,7 @@ nav > a{
     text-align: center;
     font-size: 1.5em;
     margin-top: 1vh;
+    font-family: Verdana;
 }
 
 aside{
@@ -110,14 +113,19 @@ main{
 @media screen and (min-width: 641px) and (max-width: 1007px){
     body{
         grid-template-columns: 50vw 50vw;
+        grid-template-rows: 20vh 10vh 40vh 40vh 40vh;
     }
     
     header{
-        height: 17vh;
+        height: 20vh;
         width: 95vw;
         text-align: center;
-        font-size: 1.7em;
+        font-size: 2.3em;
         margin-bottom: 0px;
+    }
+
+    header > img{
+        display: none;
     }
 
     nav{
@@ -130,10 +138,12 @@ main{
         margin-right: 4vw;
         margin-left: 0px;
         margin-top: 0px;
+        border-top: 10px solid white;
+        max-width: 95vw;
     }
 
     nav > a{
-        max-height: 5vh;
+        max-height: 8vh;
         width: auto;
         font-size: 2em;
     }
@@ -191,12 +201,9 @@ main{
         margin-bottom: 0px;
     }
 
-    /* header > img{
-        max-height: 10vh;
-        align-self: center;
-        margin-left: 1vw;
-        border: 5px solid white;
-    } */
+    header > img{
+        display: none;
+    }
 
     nav{
         grid-column: 1/2;
@@ -216,7 +223,6 @@ main{
         height: 4vh;
         width: auto;
         font-size: 1em;
-        font-family: Verdana;
     }
 
     main{
